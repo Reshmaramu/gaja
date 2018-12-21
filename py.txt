@@ -1,0 +1,45 @@
+To find the max in the list
+l = [1,2,3,45,6,333]
+print(max(l))
+
+--------
+
+Reading a content from a file
+f = open("aaa.txt", "r")
+print(f.read(5))
+ 
+--------
+
+
+removing the repeated word from the list
+def RemoveIthWord(list, word, N): 
+    count = 0
+      
+    for i in range(0, len(list)): 
+        if (list[i] == word): 
+            count = count + 1
+              
+            if(count == N): 
+                del(list[i]) 
+                return True
+                  
+    return False
+  
+# Driver code 
+list = []
+n = int(input())
+for i in range(n):
+    s = input()
+    list.append(s)
+word = input()
+N = int(input())
+  
+flag = RemoveIthWord(list, word, N) 
+  
+if (flag == True): 
+    print("Updated list is: ", list) 
+else: 
+    print("Item not Updated")
+
+
+

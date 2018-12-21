@@ -1,0 +1,33 @@
+UNIX:
+
+1.CREATE A FILE
+cat > filename.txt
+enter the values
+ctrl+D
+cat filename.txt
+
+
+2.TO DISPLAY FIRST TWO LINES:
+head -n filename.txt
+
+3.TO DISPALY LAST LINES:
+tail -n filename.txt
+
+4.TO SORT IN REVERSE ORDER
+sort -r filenmae.txt 
+
+a.TO SORT IN ASCENDING ORDER
+sort -r filenmae.txt 
+
+
+5.TO DISPLAY CONTENTS OF A FILE :
+cat filename.txt
+
+6.to display last from second
+
+tail -n2 filename.txt | head -1
+
+
+
+
+
